@@ -1,0 +1,24 @@
+{
+  "homepage" : "https://grunigen.lib.uci.edu/",
+  "homepage_is_newtabpage" : false,
+  "browser" : {
+    "show_home_button" : true,
+    "check_default_browser" : false
+  },
+  "distribution" : {
+    "show_welcome_page" : false,
+    "skip_first_run_ui" : true,
+    "import_history" : false,
+    "import_bookmarks" : false,
+    "import_home_page" : false,
+    "import_search_engine" : false,
+    "suppress_first_run_bubble": true,
+    "suppress_first_run_default_browser_prompt": true
+  },
+  "sync_promo" : {
+    "user_skipped" : true
+  },
+  "first_run_tabs" : [
+    "https://grunigen.lib.uci.edu/"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+   "checksum": "acd4625d039fbc61cab6d25dfdbc4e63",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13241227034335960",
+            "guid": "f57d8288-decf-4f0a-91a8-16c62b1c6045",
+            "id": "5",
+            "name": "Grunigen Library Home | Grunigen Medical Library",
+            "type": "url",
+            "url": "https://grunigen.lib.uci.edu/"
+         }, {
+            "date_added": "13241227044593472",
+            "guid": "7d81f836-3524-465d-a7aa-2e8daa3cfa8a",
+            "id": "6",
+            "name": "UCI Library Search",
+            "type": "url",
+            "url": "https://uci.primo.exlibrisgroup.com/discovery/search?vid=01CDL_IRV_INST:UCI&sortby=rank"
+         }, {
+            "date_added": "13241227050494701",
+            "guid": "01c580f9-2088-45ac-bc9d-4572730293d7",
+            "id": "7",
+            "name": "PubMed",
+            "type": "url",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/?otool=cdlib&tool=cdl"
+         }, {
+            "date_added": "13241227058990991",
+            "guid": "232b6366-52ac-49b9-aa21-aa878b1706c6",
+            "id": "8",
+            "name": "Home | UCI Health | Orange County, CA",
+            "type": "url",
+            "url": "https://www.ucihealth.org/"
+         } ],
+         "date_added": "13241226325826062",
+         "date_modified": "13241227058990991",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13241226325826114",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13241226325826119",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

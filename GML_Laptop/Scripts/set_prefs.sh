@@ -21,12 +21,23 @@ for user in /Users/* ; do
 
 		cp "${SCRIPTDIR}/Resources/com.apple.dock.plist" "${user}"/Library/Preferences/
 
+		#Safari
+		cp "${SCRIPTDIR}/Resources/Bookmarks.plist" "${user}"/Library/Safari/
+		cp "${SCRIPTDIR}/Resources/com.apple.Safari.plist" "${user}"/Library/Containers/com.apple.Safari/Data/Library/Preferences/
+
+		#Chrome
+		mkdir "${user}/Library/Application Support/Google/Chrome/Default"
+		cp "${SCRIPTDIR}/Resources/Chrome/Bookmarks" "${user}/Library/Application Support/Google/Chrome/Default"
+		touch "${user}/Library/Application Support/Google/Chrome/First Run"
+		cp "${SCRIPTDIR}/Resources/Chrome/Google Chrome Master Preferences" "${user}/Library/Google"
+		cp "${SCRIPTDIR}/Resources/Chrome/Preferences" "${user}/Library/Application Support/Google/Chrome"
 
 		/usr/sbin/chown -R "${username}" "${user}"/Library/Preferences/*
 
 		echo Copy desktop links
 		cp  "${SCRIPTDIR}/Resources/UC Irvine Health.webloc" "${user}"/Desktop
-		cp  "${SCRIPTDIR}/Resources/VA Long Beach Healthcare System.webloc" "${user}"/Desktop
+		#cp  "${SCRIPTDIR}/Resources/VA Long Beach Healthcare System.webloc" "${user}"/Desktop
+		cp  "${SCRIPTDIR}/Resources/Grunigen Medical Library.webloc" "${user}"/Desktop
 		chown -R "${username}" "${user}"/Desktop/*.webloc
 
 #		echo Copy Firefox profile
@@ -34,11 +45,13 @@ for user in /Users/* ; do
 #		chown -R "${username}" "${user}/Library/Application Support/Firefox"
 	fi
 
-
 done
 
 cp "${SCRIPTDIR}/Resources/com.apple.dock.plist" "/System/Library/User Template/English.lproj/Library/Preferences/"
 
+#copy firefox enterprise preferences
+mkdir "/Applications/Firefox.app/Contents/Resources/distribution"
+cp "${SCRIPTDIR}/Resources/org.mozilla.firefox.plist" "/Applications/Firefox.app/Contents/Resources/distribution"
 
 
 echo Remove AnyConnect startup window
