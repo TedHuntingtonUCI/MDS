@@ -1,0 +1,31 @@
+{
+  "policies": {
+    "DisableAppUpdate": true,
+    "DisplayMenuBar": "always",
+    "DontCheckDefaultBrowser": true,
+    "DisplayBookmarksToolbar": true,
+    "Homepage": {
+       "URL": "https://grunigen.lib.uci.edu",
+       "Locked": true,
+       "StartPage": "homepage"
+    },
+    "Bookmarks": [
+       {
+       "Title": "Grunigen Library Home",
+       "URL": "https://grunigen.lib.uci.edu",
+       "Favicon": "https://grunigen.lib.uci.edu/themes/custom/uci_libraries_custom/favicon.ico",
+       "Placement": "toolbar"
+       },
+       {
+       "Title": "UCI Library Search",
+       "URL": "https://uci.primo.exlibrisgroup.com/discovery/search?vid=01CDL_IRV_INST:UCI&amp;sortby=rank",
+       "Placement": "toolbar"
+       },
+       {
+       "Title": "PubMed",
+       "URL": "https://pubmed.ncbi.nlm.nih.gov/?otool=cdlib&amp;tool=cdl",
+       "Placement": "toolbar"
+       }
+     ]
+  }
+}

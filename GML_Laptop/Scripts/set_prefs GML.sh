@@ -40,6 +40,8 @@ for user in /Users/* ; do
 		cp  "${SCRIPTDIR}/Resources/Grunigen Medical Library.webloc" "${user}"/Desktop
 		chown -R "${username}" "${user}"/Desktop/*.webloc
 
+		echo >> ${user}/.profile && echo >> ${user}/.profile && echo '# Disable/enable notification center' >> ${user}/.profile && echo 'alias disableNotificationCenter="launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && killall NotificationCenter"' >> ${user}/.profile && echo 'alias enableNotificationCenter="launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && open /System/Library/CoreServices/NotificationCenter.app/"' >> ${user}/.profile && source ${user}/.profile
+
 #		echo Copy Firefox profile
 #		cp  -pr "${SCRIPTDIR}/Resources/Firefox" "${user}/Library/Application Support"
 #		chown -R "${username}" "${user}/Library/Application Support/Firefox"
@@ -47,17 +49,24 @@ for user in /Users/* ; do
 
 done
 
+/usr/bin/defaults write  /Library/Preferences/.GlobalPreferences.plist AppleShowScrollBars -string "Always"
+
+#unblock apps:  see http://www.theinstructional.com/guides/gatekeeper-fundamentals-part-2
+spctl --add --label "ApprovedApps" "/Applications/Cisco/Cisco AnyConnect Secure Mobility Client.app"
+spctl --enable --label "ApprovedApps"
+
 cp "${SCRIPTDIR}/Resources/com.apple.dock.plist" "/System/Library/User Template/English.lproj/Library/Preferences/"
 
 #copy firefox enterprise preferences
 mkdir "/Applications/Firefox.app/Contents/Resources/distribution"
-cp "${SCRIPTDIR}/Resources/org.mozilla.firefox.plist" "/Applications/Firefox.app/Contents/Resources/distribution"
-
+cp "${SCRIPTDIR}/Resources/policies.json" "/Applications/Firefox.app/Contents/Resources/distribution"
+chmod 755 "/Applications/Firefox.app/Contents/Resources/distribution/policies.json"
 
 echo Remove AnyConnect startup window
 rm -rf /Library/LaunchDaemons/com.cisco.anyconnect.gui.plist
 echo Stop Cisco AnyConnect popup
-/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
+#/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
+rm -rf  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist
 
 echo installing Homebrew
 #mkdir /usr/local/bin

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>org.tynsoe.geektool3</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<key>DM_SID</key>
+								<string>85E1868E-B849-4DE3-92E6-AFA967EE6CB1</string>
+								<key>DevMateLaunchCount</key>
+								<integer>2</integer>
+								<key>FrameConversionDone</key>
+								<true/>
+								<key>GeekletOrder</key>
+								<array>
+									<string>4E6FD143-0F8B-40C0-AA2D-B548C4252531</string>
+								</array>
+								<key>Groups</key>
+								<array>
+									<dict>
+										<key>GroupContent</key>
+										<array>
+											<string>FB3C1FFE-4E2B-483E-B830-033117043E33</string>
+											<string>FB3C1FFE-4E2B-483E-B830-033117043E33</string>
+											<string>4E6FD143-0F8B-40C0-AA2D-B548C4252531</string>
+										</array>
+										<key>GroupEnabled</key>
+										<true/>
+										<key>GroupName</key>
+										<string>Default Group</string>
+									</dict>
+								</array>
+								<key>NSNavLastRootDirectory</key>
+								<string>/Volumes/UCI_LIB_MACBOOK/manual</string>
+								<key>NSNavLastUserSetHideExtensionButtonState</key>
+								<true/>
+								<key>NSNavPanelExpandedSizeForSaveMode</key>
+								<string>{712, 448}</string>
+								<key>NSNavPanelExpandedStateForSaveMode</key>
+								<true/>
+								<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+								<array>
+									<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+									<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+								</array>
+								<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+								<dict>
+									<key>TB Is Shown</key>
+									<integer>1</integer>
+								</dict>
+								<key>NSWindow Frame NSFontPanel</key>
+								<string>1180 190 445 237 0 0 1792 1097 </string>
+								<key>NSWindow Frame NSNavPanelAutosaveName</key>
+								<string>475 422 841 470 0 0 1792 1097 </string>
+								<key>PropertiesOrigin</key>
+								<string>{486, 299}</string>
+								<key>ShowInMenuBar</key>
+								<false/>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>MCXToProfile.8d9148a3-f4f8-4ff2-ae1f-7ecd567baf81.alacarte.customsettings.aa94576f-dcf0-4d6d-8b90-afbb0312dddd</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>aa94576f-dcf0-4d6d-8b90-afbb0312dddd</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Included custom settings:
+org.tynsoe.geektool3
+
+Git revision: a0e04c60fc</string>
+	<key>PayloadDisplayName</key>
+	<string>MCXToProfile: org.tynsoe.geektool3</string>
+	<key>PayloadIdentifier</key>
+	<string>geektool3</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>8d9148a3-f4f8-4ff2-ae1f-7ecd567baf81</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

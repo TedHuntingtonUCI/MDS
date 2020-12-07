@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.google.Chrome</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<key>AllowOutdatedPlugins</key>
+								<false/>
+								<key>DefaultBrowserSettingEnabled</key>
+								<false/>
+								<key>DefaultNotificationsSetting</key>
+								<integer>2</integer>
+								<key>EnableMemoryInfo</key>
+								<true/>
+								<key>ExtensionInstallForcelist</key>
+								<array>
+									<string>noondiphcddnnabmjcihcjfbhfklnnep;https://clients2.google.com/service/update2/crx</string>
+									<string>djflhoibgkdhkhhcedjiklpkjnoahfmg;https://clients2.google.com/service/update2/crx</string>
+								</array>
+								<key>HomepageIsNewTabPage</key>
+								<false/>
+								<key>HomepageLocation</key>
+								<string>https://www.google.com</string>
+								<key>ManagedBookmarks</key>
+								<array>
+									<dict>
+										<key>name</key>
+										<string>Grunigen Medical Library</string>
+										<key>url</key>
+										<string>https://grunigen.lib.uci.edu/</string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>UCI Library Search</string>
+										<key>url</key>
+										<string>https://uci.primo.exlibrisgroup.com/discovery/search?vid=01CDL_IRV_INST:UCI&amp;sortby=rank</string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>PubMed</string>
+										<key>url</key>
+										<string>https://pubmed.ncbi.nlm.nih.gov/?otool=cdlib&amp;tool=cdl</string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>UCI Health</string>
+										<key>url</key>
+										<string>https://www.ucihealth.org/</string>
+									</dict>
+								</array>
+								<key>MaxConnectionsPerProxy</key>
+								<integer>99</integer>
+								<key>MetricsReportingEnabled</key>
+								<false/>
+								<key>RestoreOnStartup</key>
+								<integer>1</integer>
+								<key>SafeBrowsingEnabled</key>
+								<true/>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>MCXToProfile.e3e86a89-b2ff-4b37-a96c-411aa670cd99.alacarte.customsettings.5bae5ea9-3156-4dcc-83e2-9b621c1f20a5</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>5bae5ea9-3156-4dcc-83e2-9b621c1f20a5</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Included custom settings:
+com.google.Chrome
+
+Git revision: a0e04c60fc</string>
+	<key>PayloadDisplayName</key>
+	<string>MCXToProfile: com.google.Chrome</string>
+	<key>PayloadIdentifier</key>
+	<string>GoogleChrome</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>e3e86a89-b2ff-4b37-a96c-411aa670cd99</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

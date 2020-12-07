@@ -48,16 +48,18 @@ for user in /Users/* ; do
 done
 
 cp "${SCRIPTDIR}/Resources/com.apple.dock.plist" "/System/Library/User Template/English.lproj/Library/Preferences/"
+/usr/bin/defaults write  /Library/Preferences/.GlobalPreferences.plist AppleShowScrollBars -string "Always"
 
 #copy firefox enterprise preferences
 mkdir "/Applications/Firefox.app/Contents/Resources/distribution"
-cp "${SCRIPTDIR}/Resources/org.mozilla.firefox.plist" "/Applications/Firefox.app/Contents/Resources/distribution"
+cp "${SCRIPTDIR}/Resources/policies.json" "/Applications/Firefox.app/Contents/Resources/distribution"
 
 
 echo Remove AnyConnect startup window
 rm -rf /Library/LaunchDaemons/com.cisco.anyconnect.gui.plist
 echo Stop Cisco AnyConnect popup
-/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
+#/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
+rm -rf /Library/LaunchAgents/com.cisco.anyconnect.gui.plist
 
 echo installing Homebrew
 #mkdir /usr/local/bin
