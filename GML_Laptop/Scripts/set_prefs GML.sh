@@ -32,6 +32,16 @@ for user in /Users/* ; do
 		cp "${SCRIPTDIR}/Resources/Chrome/Google Chrome Master Preferences" "${user}/Library/Google"
 		cp "${SCRIPTDIR}/Resources/Chrome/Preferences" "${user}/Library/Application Support/Google/Chrome"
 
+		#copy desktop db
+		/bin/cp "${SCRIPTDIR}/Resources/desktoppicture.db" "${user}/Library/Application Support/Dock"
+		chown -R "${username}" "${user}/Library/Application Support/Dock/desktoppicture.db"
+
+		#file to open firefox on login
+		cp "${SCRIPTDIR}/Resources/backgrounditems.btm" "${user}/Library/Application Support/com.apple.backgroundtaskmanagementagent"
+		chown -R "${username}" "${user}/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm"
+		chmod 755 "${user}/Library/Application Support/com.apple.backgroundtaskmanagementagent/backgrounditems.btm"
+
+
 		/usr/sbin/chown -R "${username}" "${user}"/Library/Preferences/*
 
 		echo Copy desktop links
@@ -41,6 +51,9 @@ for user in /Users/* ; do
 		chown -R "${username}" "${user}"/Desktop/*.webloc
 
 		echo >> ${user}/.profile && echo >> ${user}/.profile && echo '# Disable/enable notification center' >> ${user}/.profile && echo 'alias disableNotificationCenter="launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && killall NotificationCenter"' >> ${user}/.profile && echo 'alias enableNotificationCenter="launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && open /System/Library/CoreServices/NotificationCenter.app/"' >> ${user}/.profile && source ${user}/.profile
+
+
+
 
 #		echo Copy Firefox profile
 #		cp  -pr "${SCRIPTDIR}/Resources/Firefox" "${user}/Library/Application Support"
@@ -63,10 +76,14 @@ cp "${SCRIPTDIR}/Resources/policies.json" "/Applications/Firefox.app/Contents/Re
 chmod 755 "/Applications/Firefox.app/Contents/Resources/distribution/policies.json"
 
 echo Remove AnyConnect startup window
-rm -rf /Library/LaunchDaemons/com.cisco.anyconnect.gui.plist
+#rm -rf /Library/LaunchDaemons/com.cisco.anyconnect.gui.plist
+defaults write /Library/LaunchDaemons/com.cisco.anyconnect.vpnagentd.plist RunAtLoad 0
 echo Stop Cisco AnyConnect popup
 #/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
-rm -rf  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist
+#rm -rf  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist
+mv /Library/LaunchAgents/com.cisco.anyconnect.notification.plist /Library/LaunchAgents/com.cisco.anyconnect.notification.plist.bak
+
+
 
 echo installing Homebrew
 #mkdir /usr/local/bin

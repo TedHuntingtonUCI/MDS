@@ -4,6 +4,7 @@
 		"DisablePocket": true,
 		"DisplayBookmarksToolbar": true,
 		"DontCheckDefaultBrowser": true,
+		"NoDefaultBookmarks": true,
 		"Homepage": {
 			"URL": "https://grunigen.lib.uci.edu"
 		},
@@ -29,4 +30,3 @@
 		]
 	}
 }
-
