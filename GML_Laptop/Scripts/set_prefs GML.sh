@@ -78,11 +78,13 @@ chmod 755 "/Applications/Firefox.app/Contents/Resources/distribution/policies.js
 echo Remove AnyConnect startup window
 #rm -rf /Library/LaunchDaemons/com.cisco.anyconnect.gui.plist
 defaults write /Library/LaunchDaemons/com.cisco.anyconnect.vpnagentd.plist RunAtLoad 0
+defaults write /Library/LaunchDaemons/com.cisco.anyconnect.ciscod.plist RunAtLoad 0
+defaults write /Library/LaunchDaemons/com.cisco.anyconnect.ciscod64.plist RunAtLoad 0
 echo Stop Cisco AnyConnect popup
 #/usr/bin/defaults write  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist RunAtLoad -int 0
 #rm -rf  /Library/LaunchAgents/com.cisco.anyconnect.gui.plist
 mv /Library/LaunchAgents/com.cisco.anyconnect.notification.plist /Library/LaunchAgents/com.cisco.anyconnect.notification.plist.bak
-
+#mv /Library/LaunchAgents/com.cisco.anyconnect.gui.plist /Library/LaunchAgents/com.cisco.anyconnect.gui.plist.bak
 
 
 echo installing Homebrew

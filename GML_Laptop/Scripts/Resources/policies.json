@@ -2,11 +2,18 @@
 	"policies": {
 		"DisableAppUpdate": true,
 		"DisablePocket": true,
+		"OverrideFirstRunPage": "https://grunigen.lib.uci.edu",
+		"OverridePostUpdatePage": "https://grunigen.lib.uci.edu",
+		"NewTabPage": false,
 		"DisplayBookmarksToolbar": true,
 		"DontCheckDefaultBrowser": true,
 		"NoDefaultBookmarks": true,
 		"Homepage": {
 			"URL": "https://grunigen.lib.uci.edu"
+		},
+		"Preferences": {
+			"datareporting.policy.dataSubmissionPolicyBypassNotification": true,
+			"extensions.getAddons.showPane": false
 		},
 		"Bookmarks": [
 			{
